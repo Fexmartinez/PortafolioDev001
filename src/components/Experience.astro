@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Dependiente",
+    company: "Proyectos personales",
+    description:
+      "Actualmente, me encuentro dedicado al desarrollo de proyectos personales que me permiten reforzar mis conocimientos y habilidades en programación web. Mi enfoque principal se centra en JavaScript y React, tecnologías fundamentales en el desarrollo web moderno. estoy constantemente explorando nuevas tecnologías para expandir mis horizontes. Recientemente, he estado investigando sobre el desarrollo de aplicaciones móviles y tecnologías multipropósito como Python.",
+    link: "https://www.linkedin.com/in/fexmartinez/",
+  },
+  {
+    date: "Octubre 2019",
+    title: "Ejecutivo de Ventas",
+    company: "Telecomunicaciones",
+    description:
+      "Ejecutivo de ventas multi skill, empresa de telecomunicaciones y accesorios. Funciones: Ventas y Postventas, Manejo de reclamos, Metas y Objetivos, Trabajo en Equipo y Remoto, Manejo de Efectivo, Conocimientos en Teléfonos Móviles y Telecomunicaciones. ",
+    link: "https://www.linkedin.com/in/fexmartinez/",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
